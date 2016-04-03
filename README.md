@@ -20,4 +20,4 @@ Include the .js and .css file in your page. Then simply choose your content with
         size: "small"       // SIZE OF DESIGN large-small (By default medium size)
      })
      
-All parameters are optional, in the default case you will get the medium sized monitor.
+All parameters are optional, in the default case you will get the medium sized monitor. For more examples, check the project's [GitHub page](http://onurferhat.com/monitorize.js/).
