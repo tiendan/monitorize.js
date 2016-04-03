@@ -19,10 +19,10 @@
  * ========================================================== */
 /* Usage:
  * $("items").monitorize({
-    id: "wrapper-div-id",
     type: "monitor",    // TYPE OF SCREEN: "monitor", "laptop", or "phone"
     base: true,     // DOES MONITOR HAVE A BASE? (Only for "monitor" type)
     shadow: true,   // DOES THE SCREEN HAVE A SHADOW?
+    reflection: true,   // DOES THE SCREEN HAVE A SHINY REFLECTION?
     size: "small"   // SIZE OF DESIGN large-small
  })
  */

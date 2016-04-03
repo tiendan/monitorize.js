@@ -27,10 +27,10 @@
     <div class="container-fluid">
         
         <div class="row">
-          <div class="col-md-6">
-              <h2>Large laptop</h2>
+          <div class="col-md-4">
+              <h2>Monitor</h2>
               <div class="demo-container">
-                    <img id="demo-large-laptop" src="http://placehold.it/400x225/fda566/000000/?text=CONTENT"/>
+                    <img id="demo-normal" src="http://placehold.it/320x180/fda566/000000/?text=CONTENT"/>
               </div>
           </div>
           <div class="col-md-4">
@@ -39,52 +39,31 @@
                     <img id="demo-normal-laptop" src="http://placehold.it/320x180/fda566/000000/?text=CONTENT"/>
               </div>
           </div>
-          <div class="col-md-2">
-              <h2>Small laptop</h2>
-              <div class="demo-container">
-                    <img id="demo-small-laptop" src="http://placehold.it/240x135/fda566/000000/?text=CONTENT"/>
-              </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-6">
-              <h2>Large monitor</h2>
-                <div class="demo-container">
-                    <img id="demo-large" src="http://placehold.it/400x225/fda566/000000/?text=CONTENT"/>
-                </div>
-          </div>
-          <div class="col-md-4">
-              <h2>Monitor</h2>
-              <div class="demo-container">
-                    <img id="demo-normal" src="http://placehold.it/320x180/fda566/000000/?text=CONTENT"/>
-              </div>
-          </div>
-          <div class="col-md-2">
-              <h2>Small monitor</h2>
-              <div class="demo-container">
-                    <img id="demo-small" src="http://placehold.it/240x135/fda566/000000/?text=CONTENT"/>
-              </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-md-6">
-              <h2>Large phone</h2>
-              <div class="demo-container">
-                    <img id="demo-large-phone" src="http://placehold.it/225x400/fda566/000000/?text=CONTENT"/>
-              </div>
-          </div>
           <div class="col-md-4">
               <h2>Phone</h2>
               <div class="demo-container">
                     <img id="demo-normal-phone" src="http://placehold.it/180x320/fda566/000000/?text=CONTENT"/>
               </div>
           </div>
-          <div class="col-md-2">
-              <h2>Small phone</h2>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4">
+              <h2>Without the base</h2>
+                <div class="demo-container">
+                    <img id="demo-wo-base" src="http://placehold.it/320x180/fda566/000000/?text=CONTENT"/>
+                </div>
+          </div>
+          <div class="col-md-4">
+              <h2>No shiny reflection</h2>
+                <div class="demo-container">
+                    <img id="demo-wo-reflection" src="http://placehold.it/320x180/fda566/000000/?text=CONTENT"/>
+                </div>
+          </div>
+          <div class="col-md-4">
+              <h2>Compact design</h2>
               <div class="demo-container">
-                    <img id="demo-small-phone" src="http://placehold.it/90x160/fda566/000000/?text=CONTENT"/>
+                    <img id="demo-small" src="http://placehold.it/240x135/fda566/000000/?text=CONTENT"/>
               </div>
           </div>
         </div>
@@ -99,16 +78,13 @@
       
     <script type="text/javascript">
         $(function() {
-            $("#demo-large").monitorize({size: "large", reflection: false});
             $("#demo-normal").monitorize();
-            $("#demo-small").monitorize({size: "small"});
-            $("#demo-large-phone").monitorize({type: "phone", size: "large"});
+            $("#demo-normal-laptop").monitorize({type: "laptop", shadow: false});
             $("#demo-normal-phone").monitorize({type: "phone"});
-            $("#demo-small-phone").monitorize({type: "phone", size: "small"});
             
-            $("#demo-large-laptop").monitorize({type: "laptop", size: "large"});
-            $("#demo-normal-laptop").monitorize({type: "laptop"});
-            $("#demo-small-laptop").monitorize({type: "laptop", size: "small"});
+            $("#demo-wo-base").monitorize({base: false});
+            $("#demo-wo-reflection").monitorize({reflection: false});
+            $("#demo-small").monitorize({size: "small"});
         });
     </script>
   </body>
