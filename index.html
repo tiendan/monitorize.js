@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Monitorize.js</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="./monitorize.css">
+    <link rel="stylesheet" href="./style.css">
+      
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-md-6">
+              <h2>Large laptop</h2>
+              <div class="demo-container">
+                    <img id="demo-large-laptop" src="http://placehold.it/400x225/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <h2>Laptop</h2>
+              <div class="demo-container">
+                    <img id="demo-normal-laptop" src="http://placehold.it/320x180/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <h2>Small laptop</h2>
+              <div class="demo-container">
+                    <img id="demo-small-laptop" src="http://placehold.it/240x135/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6">
+              <h2>Large monitor</h2>
+                <div class="demo-container">
+                    <img id="demo-large" src="http://placehold.it/400x225/fda566/000000/?text=CONTENT"/>
+                </div>
+          </div>
+          <div class="col-md-4">
+              <h2>Monitor</h2>
+              <div class="demo-container">
+                    <img id="demo-normal" src="http://placehold.it/320x180/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <h2>Small monitor</h2>
+              <div class="demo-container">
+                    <img id="demo-small" src="http://placehold.it/240x135/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6">
+              <h2>Large phone</h2>
+              <div class="demo-container">
+                    <img id="demo-large-phone" src="http://placehold.it/225x400/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <h2>Phone</h2>
+              <div class="demo-container">
+                    <img id="demo-normal-phone" src="http://placehold.it/180x320/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <h2>Small phone</h2>
+              <div class="demo-container">
+                    <img id="demo-small-phone" src="http://placehold.it/90x160/fda566/000000/?text=CONTENT"/>
+              </div>
+          </div>
+        </div>
+    </div>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./monitorize.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      
+    <script type="text/javascript">
+        $(function() {
+            $("#demo-large").monitorize({size: "large", reflection: false});
+            $("#demo-normal").monitorize();
+            $("#demo-small").monitorize({size: "small"});
+            $("#demo-large-phone").monitorize({type: "phone", size: "large"});
+            $("#demo-normal-phone").monitorize({type: "phone"});
+            $("#demo-small-phone").monitorize({type: "phone", size: "small"});
+            
+            $("#demo-large-laptop").monitorize({type: "laptop", size: "large"});
+            $("#demo-normal-laptop").monitorize({type: "laptop"});
+            $("#demo-small-laptop").monitorize({type: "laptop", size: "small"});
+        });
+    </script>
+  </body>
+</html>
+
+
